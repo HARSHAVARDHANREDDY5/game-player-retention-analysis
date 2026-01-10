@@ -41,9 +41,10 @@ session_id = 1
 
 for _, player in players_df.iterrows():
     churn_day = np.random.choice(
-        [3, 7, 14, 30],
-        p=[0.30, 0.25, 0.20, 0.25]
+        [1, 3, 7, 14, 30],
+        p=[0.15, 0.25, 0.20, 0.20, 0.20]
     )
+
 
     max_level = np.random.choice(
         [5, 10, 15, 20],
